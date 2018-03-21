@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="aml-web:war">
+    <output-path>$PROJECT_DIR$/aml-parent/aml-main/aml-web/target</output-path>
+    <root id="archive" name="aml-web.war">
+      <element id="artifact" artifact-name="aml-web:war exploded" />
+    </root>
+  </artifact>
+</component>
