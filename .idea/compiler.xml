@@ -18,7 +18,7 @@
       <module name="aml-common" target="1.8" />
       <module name="aml-dao" target="1.8" />
       <module name="aml-main" target="1.8" />
-      <module name="aml-parent" target="1.8" />
+      <module name="aml-parent" target="1.5" />
       <module name="aml-platform" target="1.8" />
       <module name="aml-pojo" target="1.8" />
       <module name="aml-service" target="1.8" />

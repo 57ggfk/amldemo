@@ -12,15 +12,24 @@
     <artifactId>aml-main</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <!--持久性，数据库操作-->
         <module>aml-dao</module>
+        <!--业务层，逻辑代码-->
         <module>aml-service</module>
+        <!--视图层，webapp模块，前台功能-->
         <module>aml-web</module>
+        <!--模型层，实体类，值对象，数据传输对象-->
         <module>aml-pojo</module>
     </modules>
 <dependencies>
     <dependency>
         <groupId>com.demo.aml</groupId>
         <artifactId>aml-common</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.demo.aml</groupId>
+        <artifactId>aml-platform</artifactId>
         <version>${project.version}</version>
     </dependency>
 </dependencies>

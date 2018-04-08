@@ -11,6 +11,12 @@
 
     <artifactId>aml-service</artifactId>
     <packaging>jar</packaging>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.demo.aml</groupId>
+            <artifactId>aml-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
