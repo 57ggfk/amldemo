@@ -34,6 +34,27 @@
     </dependency>
 </dependencies>
 <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <resources>
+        <resource>
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+            </includes>
+        </resource>
+        <resource>
+            <directory>src/main/resources</directory>
+        </resource>
+    </resources>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <testResources>
+        <testResource>
+            <directory>src/test/resources</directory>
+        </testResource>
+    </testResources>
+    <outputDirectory>target/classes</outputDirectory>
+    <testOutputDirectory>target/test-classes</testOutputDirectory>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -69,6 +90,21 @@
                 <port>8081</port>
             </configuration>
         </plugin>
+        <!--<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <configuration>
+                <webResources>
+                    <resource>
+                        <directory>${project.basedir}/lib</directory>
+                        <targetPath>WEB-INF/lib</targetPath>
+                        <filtering>true</filtering>
+                        <includes>
+                            <include>**/*.jar</include>
+                        </includes> </resource>
+                </webResources>
+            </configuration>
+        </plugin>-->
     </plugins>
 </build>
 </project>
